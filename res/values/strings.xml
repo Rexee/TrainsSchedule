@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Расписание электричек</string>
+    <string name="app_search">Поиск</string>
+    <string name="search">Поиск</string>
+    <string name="from">Откуда</string>
+    <string name="to">Куда</string>
+    <string name="onDate">На дату</string>
+    <string name="addToFavorites">Добавить в избранное</string>
+    <string name="refresh">Обновить</string>
+    <string name="favorites">Избранное</string>
+    <string name="in">через</string>
+    <string name="min">мин</string>
+    <string name="hr">ч</string>
+    <string name="express">Экспресс</string>
+    <string name="onToday">На сегодня</string>
+    <string name="onTomorrow">На завтра</string>
+    <string name="enterStation">Укажите станцию</string>
+    <string name="stationNotFound">Станция не найдена</string>
+    <string name="addedToFav">Маршрут добавлен в избранное</string>
+    <string name="nonStop">Без остановок</string>
+</resources>

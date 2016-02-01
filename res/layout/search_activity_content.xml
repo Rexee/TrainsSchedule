@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Search_Activity"
+    tools:showIn="@layout/search_activity_main">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/btnSwitch"
+        android:layout_toStartOf="@+id/btnSwitch"
+        android:paddingBottom="-10dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/tvSearchFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+
+            android:autoText="true"
+            android:drawableRight="@mipmap/ic_clear_search_api_holo_light"
+            android:hint="@string/from"
+            android:inputType="textNoSuggestions|text"
+            android:imeOptions="actionNext" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textInputLayoutFrom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textInputLayoutFrom"
+        android:layout_below="@+id/textInputLayoutFrom">
+
+        <AutoCompleteTextView
+            android:id="@+id/tvSearchTo"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:autoText="false"
+            android:drawableRight="@mipmap/ic_clear_search_api_holo_light"
+            android:hint="@string/to"
+            android:inputType="textNoSuggestions|text"
+            android:imeOptions="actionSearch" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textInputLayoutTo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textInputLayoutTo"
+        android:layout_below="@+id/textInputLayoutTo">
+
+        <EditText
+            android:id="@+id/tvDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/onDate"
+            android:imeOptions="actionSearch"
+            android:inputType="textNoSuggestions|text"
+            android:drawableRight="@drawable/ic_action_go_to_today" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSwitch"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_action_undo"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addToFavorites"
+        android:id="@+id/btnAddToFavorites"
+        android:layout_below="@+id/textInputLayoutDate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textInputLayoutDate"
+        android:layout_alignEnd="@+id/textInputLayoutDate"
+        android:drawableLeft="@drawable/ic_action_important"
+        android:textColor="@android:color/primary_text_dark_nodisable"
+        android:paddingLeft="16dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Trains Schedule</string>
+    <string name="addToFavorites">Add to favorites</string>
+    <string name="app_search">Search</string>
+    <string name="from">From</string>
+    <string name="onDate">Date</string>
+    <string name="search">Search</string>
+    <string name="to">To</string>
+    <string name="refresh">Reload</string>
+    <string name="favorites">Favorites</string>
+    <string name="hr">hr</string>
+    <string name="in">In</string>
+    <string name="min">min</string>
+    <string name="express">Express</string>
+    <string name="onToday">Today</string>
+    <string name="onTomorrow">Tomorrow</string>
+    <string name="addedToFav">Route added to favorites</string>
+    <string name="enterStation">Select station</string>
+    <string name="stationNotFound">No station found</string>
+    <string name="nonStop">Nonstop</string>
+</resources>
