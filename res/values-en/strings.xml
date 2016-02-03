@@ -19,4 +19,5 @@
     <string name="enterStation">Select station</string>
     <string name="stationNotFound">No station found</string>
     <string name="nonStop">Nonstop</string>
+    <string name="on">On</string>
 </resources>
