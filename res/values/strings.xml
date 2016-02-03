@@ -18,4 +18,5 @@
     <string name="stationNotFound">Станция не найдена</string>
     <string name="addedToFav">Маршрут добавлен в избранное</string>
     <string name="nonStop">Без остановок</string>
+    <string name="on">На</string>
 </resources>
