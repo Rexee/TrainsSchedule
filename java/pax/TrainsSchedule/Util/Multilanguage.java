@@ -19,6 +19,7 @@ public class Multilanguage {
     public static String onToday;
     public static String enterStation;
     public static String stationNotFound;
+    public static String on;
 
     public static String addedToFav;
     public static String nonstop;
@@ -41,5 +42,6 @@ public class Multilanguage {
         stationNotFound = res.getString(R.string.stationNotFound);
         addedToFav = res.getString(R.string.addedToFav);
         nonstop = res.getString(R.string.nonStop);
+        on = res.getString(R.string.on);
     }
 }
