@@ -69,15 +69,8 @@ public class Util {
         }
 
         Date dDate = new Date(date);
-
-        DateFormatSymbols RU_SYMBOLS = new DateFormatSymbols(new Locale("ru"));
-        String[] RU_MONTHS = {"января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"};
-
-        RU_SYMBOLS.setMonths(RU_MONTHS);
-
-        SimpleDateFormat df = new SimpleDateFormat("dd MMMM", RU_SYMBOLS);
-        return "На " + df.format(dDate);
-
+        SimpleDateFormat df = new SimpleDateFormat("dd MMMM", Locale.getDefault());
+        return Multilanguage.on + " " + df.format(dDate);
     }
 
     public static String getDateRepresentation(int year, int month, int day) {
